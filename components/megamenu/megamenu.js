@@ -608,7 +608,7 @@ function Megamenu() {
   };
 
   return (
-    <div className="bg-white border-b font-sans">
+    <div className={styles.mega_menu_container}>
       <div className={styles.mega_menu}>
         {Menus.map((category) => (
           <div
