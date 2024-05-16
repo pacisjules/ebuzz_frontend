@@ -15,7 +15,7 @@ function Popular() {
         {Menus.map((item) => {
           const subs = item.sub;
           return (
-            <div >
+            <div key={item.id}>
               <div className="flex items-center gap-2 mt-2">
                 <h1 className="font-bold text-red-700">{item.icon}</h1>
                 <h1 className="font-bold">{item.menu}</h1>
@@ -23,7 +23,7 @@ function Popular() {
               <div>
                 {subs.map((sub) => {
                   return (
-                    <div>
+                    <div key={sub.id}>
                       <Link
                         href={"#"}
                         className={`${Font_inter.className} text-sm hover:text-blue-700 cursor-pointer `}
