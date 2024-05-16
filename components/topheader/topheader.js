@@ -9,7 +9,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { BsChatText } from "react-icons/bs";
 import { IoMdAddCircle } from "react-icons/io";
 import { CiHome, CiSearch, CiViewList, CiUser } from "react-icons/ci";
-import { useTheme } from "next-themes"
+import { useTheme } from "next-themes";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -26,7 +26,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 function Topheader() {
-  const { setTheme, theme } = useTheme()
+  const { setTheme, theme } = useTheme();
   const [all_countries, setAllCountries] = useState([
     {
       id: 1,
@@ -141,36 +141,40 @@ function Topheader() {
     {
       id: 1,
       name: "Notification",
-      icon: <IoNotificationsOutline className="text-red-300"/>,
+      icon: <IoNotificationsOutline className="text-red-300" />,
     },
 
     {
       id: 2,
       name: "My Searches",
-      icon: <AiOutlineFileSearch className="text-red-300"/>,
+      icon: <AiOutlineFileSearch className="text-red-300" />,
     },
 
     {
       id: 3,
       name: "Favorites",
-      icon: <AiOutlineHeart className="text-red-300"/>,
+      icon: <AiOutlineHeart className="text-red-300" />,
     },
 
     {
       id: 4,
       name: "Chats",
-      icon: <BsChatText className="text-red-300"/>,
+      icon: <BsChatText className="text-red-300" />,
     },
 
     {
       id: 5,
       name: "My ads",
-      icon: <CiViewList className="text-red-300"/>,
+      icon: <CiViewList className="text-red-300" />,
     },
   ]);
 
   return (
-    <div className={`w-full lg:border-b ${theme === 'dark' ? "border-gray-700" : "border-gray-200"}`}>
+    <div
+      className={`w-full lg:border-b ${
+        theme === "dark" ? "border-gray-700" : "border-gray-200"
+      }`}
+    >
       {/* Computer Menu */}
       <div className="hidden lg:flex w-full h-16 flex flex-row justify-between content-center p-4 border-slate-200 mx-auto">
         <div className="flex flex-row justify-between gap-6">
@@ -259,8 +263,6 @@ function Topheader() {
         </div>
 
         <div className="flex flex-row justify-between gap-6">
-          
-          
           <div className="flex items-center gap-4 content-center flex-row mr-10">
             {all_Icons.map(({ id, name, icon }) => (
               <div
@@ -268,7 +270,13 @@ function Topheader() {
                 className="flex items-center gap content-center flex-col"
               >
                 {icon}
-                <span className={`text-${theme === 'dark' ? "white" : "gray-500"} text-xs font-medium mt-2`}>{name}</span>
+                <span
+                  className={`text-${
+                    theme === "dark" ? "white" : "gray-500"
+                  } text-xs font-medium mt-2`}
+                >
+                  {name}
+                </span>
               </div>
             ))}
           </div>
@@ -290,7 +298,11 @@ function Topheader() {
       </div>
 
       {/* Tablet menu */}
-      <div className={`sm:hidden md:flex w-full  h-16 p-4  flex-col justify-between content-center  border-b ${theme === 'dark' ? "border-gray-700" : "border-gray-200"} mx-auto lg:hidden `}>
+      <div
+        className={`sm:hidden md:flex w-full  h-16 p-4  flex-col justify-between content-center  border-b ${
+          theme === "dark" ? "border-gray-700" : "border-gray-200"
+        } mx-auto lg:hidden `}
+      >
         <div className="flex flex-row justify-center content-center gap-6">
           <Image
             src="/assets/imgs/expelogo.png"
@@ -302,7 +314,11 @@ function Topheader() {
         </div>
 
         <div
-          className={`bg-${theme === 'dark' ? "black" : "white"} fixed bottom-0 left-0 right-0 flex flex-row justify-between content-center gap-4 pt-4 pb-4 pl-4 pr-4  border-t ${theme === 'dark' ? "border-gray-700" : "border-gray-200"}`}
+          className={`bg-${
+            theme === "dark" ? "black" : "white"
+          } fixed bottom-0 left-0 right-0 flex flex-row justify-between content-center gap-4 pt-4 pb-4 pl-4 pr-4  border-t ${
+            theme === "dark" ? "border-gray-700" : "border-gray-200"
+          }`}
         >
           {mobile_Icons.map(({ id, name, icon }) => (
             <div
@@ -310,7 +326,13 @@ function Topheader() {
               className="flex items-center justify-between  gap-2 content-center flex-col cursor-pointer"
             >
               {icon}
-              <span className={`text-${theme === 'dark' ? "white" : "gray-500"} text-xs font-medium`}>{name}</span>
+              <span
+                className={`text-${
+                  theme === "dark" ? "white" : "gray-500"
+                } text-xs font-medium`}
+              >
+                {name}
+              </span>
             </div>
           ))}
         </div>

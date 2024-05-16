@@ -1,6 +1,8 @@
 .mega_menu_container {
     display: flex;
-    border-bottom: 1px gainsboro solid;    
+    border-bottom: 1px gainsboro solid;   
+    width: 100%;
+    justify-content: center;
   }
 .mega_menu {
     display: flex;
@@ -17,6 +19,8 @@
     font-size: 13px;
     color: #383838;
     z-index: 1;
+
+    width: 85%;
   }
 
   
@@ -50,7 +54,7 @@
   }
 
   .sub_menu_item .left{
-    background-color: rgba(247, 247, 247, 0.815);
+    background-color: #f7f7f7d0;
     width: 40%;
     font-weight: normal;
     border-top: #303030 solid 5px;
@@ -68,11 +72,47 @@
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
+    font-weight: normal;
   }
 
   .sub_menu_item .left p:hover{
     background-color: #efefef;
-    color:red
+    color:red;
+    font-weight: bold;
+  }
+
+
+  .sub_menu .title{
+    width: 93%;
+    height: 45px;
+    background-color: #efefef;
+    margin-right: 20px;
+    border-bottom: #d5d5d5 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    transition: 0.3s ease-in-out;
+  }
+  .sub_menu .title .link{
+    /* margin-top: -10px; */
+    color: red;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2px;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  .sub_menu .title .link:hover{
+    color: black;
+    text-decoration: none;
+  }
+
+  .sub_menu .title .link:hover .icon{
+    margin-left: 10px;
   }
 
 
@@ -101,7 +141,6 @@
   
   
   .sub_menu p {
-    
     margin: 0;
     font-weight: bold;
   }
