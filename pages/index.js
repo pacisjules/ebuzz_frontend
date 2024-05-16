@@ -14,8 +14,8 @@ export default function Home() {
             {list.map((item)=>{
               return(
 
-                <div key={item.id} className="rounded-md border-gray-500 hover:shadow-2xl hover:cursor-pointer p-2 hover:border-red-500 w-[200px]">
-                  <Image src={item.image_link} alt={item.title} width={300} height={300} unoptimized className="rounded-md w-[200px] h-[150px] object-cover object-center" />
+                <div key={item.id} className="duration-300 ease-in-out rounded-md border-white border-[3px] hover:scale-105 hover:border-red-500 hover:shadow-2xl hover:cursor-pointer p-2  w-[100%]">
+                  <Image src={item.image_link} alt={item.title} width={300} height={300} unoptimized className="rounded-md w-[100%] h-[216px] object-cover object-center" />
                  <h1 className={`text-red-600 font-bold text-lg mt-2 ${Font_inter.className}`}>RWF {(item.price).toLocaleString()}</h1> 
                  <h1 className={`text-gray-800 font-bold text-lg ${Font_inter.className} text-[14px]`}> {item.owner}</h1> 
                  <h1 className={`text-gray-500 mt ${Font_inter.className} text-[13px]`}> {item.title}</h1> 
