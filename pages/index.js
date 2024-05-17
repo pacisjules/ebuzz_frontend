@@ -6,8 +6,10 @@ import { useTheme } from "next-themes";
 import { GoArrowRight } from "react-icons/go";
 import Searcher from "@/components/searcher/searcher";
 import Popular from "@/components/popularcategory/popular";
+import { useRouter } from "next/router";
 export default function Home() {
   const { setTheme, theme } = useTheme();
+  const router=useRouter()
   return (
     <>
     <Searcher />
@@ -29,6 +31,7 @@ export default function Home() {
                   return (
                     <div
                       key={item.id}
+                      onClick={()=>router.push(`/pages/Details?id=${item.id}`)}
                       className="group duration-300 shrink-0  ease-in-out w-[250px] mr-4 rounded-md  border-[#374151] border-[1px] hover:bg-[#374151]  hover:scale-[1.05] hover:border-red-500 hover:shadow-2xl hover:cursor-pointer p-2"
                     >
                       <Image
@@ -89,6 +92,7 @@ export default function Home() {
                   return (
                     <div
                       key={item.id}
+                      onClick={()=>router.push(`/pages/Details?id=${item.id}`)}
                       className="group shrink-0 duration-300 ease-in-out rounded-md mr-2   border-[1px]  hover:cursor-pointer p-2  w-[250px]"
                     >
                       <Image

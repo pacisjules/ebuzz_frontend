@@ -24,7 +24,7 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
+import Link from "next/link";
 function Topheader() {
   const { setTheme, theme } = useTheme();
   const [all_countries, setAllCountries] = useState([
@@ -325,7 +325,7 @@ function Topheader() {
             <div
               key={id}
               className="flex items-center justify-between  gap-2 content-center flex-col cursor-pointer"
-            >
+            > <Link href={`/pages/Post?myid=${id}`} className="flex items-center justify-between  gap-2 content-center flex-col cursor-pointer">
               {icon}
               <span
                 className={`text-${
@@ -333,7 +333,7 @@ function Topheader() {
                 } text-xs font-medium`}
               >
                 {name}
-              </span>
+              </span></Link>
             </div>
           ))}
         </div>
