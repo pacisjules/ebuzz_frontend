@@ -24,6 +24,9 @@ function Footer() {
               width={50}
               height={50}
               unoptimized
+              loading = 'lazy' 
+              placeholder="blur" 
+              blurDataURL="data:image/jpeg;base64,<your-base64-encoded-image>"
               className="rounded-md w-[150px] object-contain object-center mr-2"
             />
 
@@ -33,6 +36,9 @@ function Footer() {
               width={50}
               height={50}
               unoptimized
+              loading = 'lazy' 
+              placeholder="blur" 
+              blurDataURL="data:image/jpeg;base64,<your-base64-encoded-image>"
               className="rounded-md w-[150px] object-contain object-center"
             />
 
@@ -43,6 +49,9 @@ function Footer() {
               width={50}
               height={50}
               unoptimized
+              loading = 'lazy' 
+              placeholder="blur" 
+              blurDataURL="data:image/jpeg;base64,<your-base64-encoded-image>"
               className="rounded-md w-[150px] object-contain object-center"
             />
 
@@ -52,6 +61,9 @@ function Footer() {
               width={50}
               height={50}
               unoptimized
+              loading = 'lazy' 
+              placeholder="blur" 
+              blurDataURL="data:image/jpeg;base64,<your-base64-encoded-image>"
               className="rounded-md w-[150px] object-contain object-center"
             />
 
@@ -268,6 +280,9 @@ function Footer() {
               width={50}
               height={50}
               unoptimized
+              loading = 'lazy' 
+              placeholder="blur" 
+              blurDataURL="data:image/jpeg;base64,<your-base64-encoded-image>"
               className="rounded-md w-[120px] h-[120px] object-contain object-center"
             />
             <p className={`font-normal text-gray-500 text-[12px]`}>
@@ -281,6 +296,9 @@ function Footer() {
               width={50}
               height={50}
               unoptimized
+              loading = 'lazy' 
+              placeholder="blur" 
+              blurDataURL="data:image/jpeg;base64,<your-base64-encoded-image>"
               className="rounded-full w-[120px] object-contain object-center filter grayscale"
             />
           </div>
