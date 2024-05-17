@@ -6,15 +6,15 @@ function Footer() {
   const { setTheme, theme } = useTheme();
   return (
     <div className="hidden lg:flex w-full flex-col items-center">
-    <div className="w-10/12 flex flex-row h-[80px] justify-between items-center bg-white">
+    <div className="w-10/12 flex flex-row h-[80px] justify-between items-center ">
           <div className={`flex flex-col w-1/3`}>
             <h1
-              className={`font-bold ${Font_inter.className} text-[24px] text-black`}
+              className={`font-bold ${Font_inter.className} text-[18px] `}
             >
               Find amazing deals on the go.
             </h1>
             <h2
-              className={`font-bold ${Font_inter.className} text-[24px] text-red-600`}
+              className={`font-bold ${Font_inter.className} text-[18px] text-red-600`}
             >
               Download the app now!
             </h2>
@@ -72,7 +72,7 @@ function Footer() {
 
           </div>
         </div>
-    <div className="hidden lg:flex w-full mt bg-gray-100 justify-center items-center p-4">
+    <div className="hidden lg:flex w-full mt justify-center items-center p-4 border-t border-[#374151]">
       <div className="w-10/12 flex flex-col ">
         
         <div className="w-full">

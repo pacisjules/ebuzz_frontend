@@ -25,7 +25,7 @@ function Searcher() {
             <p className="text-white font-bold text-[14px]">Searching in</p>
           </div>
 
-          <div className=" flex flex-row justify-between gap-4 text-white font-bold text-[14px] items-center">
+          <div className={`flex flex-row justify-between gap-4 text-white font-bold text-[14px] items-center`}>
             <p className="text-white font-bold text-[14px] bg-red-600 pl-4 pr-4 pt-2 pb-2 rounded-full hover:bg-white hover:text-red-600 cursor-pointer duration-200 ease-in-out">
               All
             </p>
@@ -39,11 +39,11 @@ function Searcher() {
           </div>
         </div>
         <div className="flex flex-row justify-between p-2 ">
-          <div className="flex flex-row bg-white p-2 w-[85%] justify-between content-center rounded-md">
+          <div className={`flex flex-row ${theme === 'dark' ? 'bg-[#121212]' : 'bg-white'} p-2 w-[85%] justify-between content-center rounded-md`}>
             <input
               type="text"
               placeholder="Search for anything..."
-              className="w-[90%]  text-[16px] outline-0"
+              className={`w-[90%]  text-[16px] outline-0 ${Font_inter.className}`}
             />
             <GoSearch className="text-[30px] text-gray-400" />
           </div>

@@ -5,6 +5,27 @@
 @tailwind utilities;
 
 
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  color:#9a0a0069
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #d26851; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0000; 
+}
 
 :root {
   --background: 0 0% 100%;

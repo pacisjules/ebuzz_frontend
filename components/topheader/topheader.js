@@ -299,7 +299,8 @@ function Topheader() {
 
       {/* Tablet menu */}
       <div
-        className={`sm:hidden md:flex w-full  h-16 p-4  flex-col justify-between content-center  border-b ${
+        className={`sm:hidden md:flex w-full  h-16 p-4 
+          flex-col justify-between content-center  border-b ${
           theme === "dark" ? "border-gray-700" : "border-gray-200"
         } mx-auto lg:hidden `}
       >
@@ -314,8 +315,8 @@ function Topheader() {
         </div>
 
         <div
-          className={`bg-${
-            theme === "dark" ? "black" : "white"
+          className={`${
+            theme === "dark" ? "bg-black bg-opacity-70 backdrop-blur-lg" : "bg-white bg-opacity-70 backdrop-blur-lg"
           } fixed bottom-0 left-0 right-0 flex flex-row justify-between content-center gap-4 pt-4 pb-4 pl-4 pr-4  border-t ${
             theme === "dark" ? "border-gray-700" : "border-gray-200"
           }`}

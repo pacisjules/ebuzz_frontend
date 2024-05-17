@@ -1,12 +1,10 @@
 .mega_menu_container {
     display: flex;
-    border-bottom: 1px gainsboro solid;   
+    border-bottom: 1px #374151 solid;   
     width: 100%;
     justify-content: center;
   }
 .mega_menu {
-    display: flex;
-    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,7 +17,6 @@
     font-size: 13px;
     color: #383838;
     z-index: 1;
-
     width: 85%;
   }
 
@@ -145,7 +142,7 @@
     font-weight: bold;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     .mega_menu_container {
       display: none;    
     }
