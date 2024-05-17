@@ -11,7 +11,7 @@ import {
 }  from "@/components/ui/dropdown-menu"
 
 function Theme() {
-  const { setTheme} = useTheme()
+  const { setTheme} = useTheme("light")
 
   // useEffect(() => {
   //   setTheme("system");

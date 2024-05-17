@@ -4,10 +4,13 @@ import { Font_ubuntu, Font_inter } from "@/components/my_font";
 import Home_Popular from "@/components/home_popular";
 import { useTheme } from "next-themes";
 import { GoArrowRight } from "react-icons/go";
-
+import Searcher from "@/components/searcher/searcher";
+import Popular from "@/components/popularcategory/popular";
 export default function Home() {
   const { setTheme, theme } = useTheme();
   return (
+    <><Searcher />
+    <Popular />
     <div className="w-full flex flex-col justify-center items-center">
       <div className="hidden lg:flex  flex-col  w-[83%]   mt-4 items-center">
         {Home_Popular.map((item) => {
@@ -138,5 +141,6 @@ export default function Home() {
         })}
       </div>
     </div>
+    </>
   );
 }
