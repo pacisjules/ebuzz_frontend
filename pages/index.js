@@ -128,7 +128,7 @@ export default function Home() {
                   <div
                     className={`w-[50px] h-[50px] rounded-full shadow-md bg-red-600 flex justify-center items-center`}
                   >
-                    <GoArrowRight className=" text-[20px]" />
+                    <GoArrowRight color="white" className="text-[20px] text-white" />
                   </div>
                   <p
                     className={`text-center text-sm mt-2 ${Font_inter.className} font-bold`}
