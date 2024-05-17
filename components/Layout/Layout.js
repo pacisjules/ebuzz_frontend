@@ -14,8 +14,7 @@ const Layout = ({ children }) => {
     >
       <Topheader />
       <Megamenu />
-      <Searcher />
-      <Popular />
+      
       {children}
       <br/><br/>
       <Footer />

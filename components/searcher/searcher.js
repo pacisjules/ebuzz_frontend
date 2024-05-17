@@ -43,7 +43,7 @@ function Searcher() {
             <input
               type="text"
               placeholder="Search for anything..."
-              className={`w-[90%]  text-[16px] outline-0 ${Font_inter.className}`}
+              className={`w-[90%]  text-[16px] outline-0 ${Font_inter.className} ${theme === 'dark' ? 'bg-[#121212]' : 'bg-white'}`}
             />
             <GoSearch className="text-[30px] text-gray-400" />
           </div>

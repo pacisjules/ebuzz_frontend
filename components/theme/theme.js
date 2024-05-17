@@ -13,9 +13,9 @@ import {
 function Theme() {
   const { setTheme} = useTheme("light")
 
-  // useEffect(() => {
-  //   setTheme("system");
-  // }, [])
+  useEffect(() => {
+    setTheme("light");
+  }, [])
   
   return (
       <DropdownMenu>
