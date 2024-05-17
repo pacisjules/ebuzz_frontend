@@ -1,8 +1,11 @@
+import React, {useState} from "react";
 import Image from "next/image";
 import { Font_ubuntu, Font_inter } from "@/components/my_font";
 import Home_Popular from "@/components/home_popular";
+import { useTheme } from "next-themes";
 
 export default function Home() {
+  const { setTheme, theme } = useTheme();
   return (
     <div className="hidden lg:flex  flex-col  w-10/12 text-gray-800 mt-4">
       {Home_Popular.map((item) => {

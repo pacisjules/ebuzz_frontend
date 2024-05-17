@@ -1,11 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import Menus from "../menus";
 import { Font_ubuntu, Font_inter, Font_oreo } from "../my_font";
 import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useTheme } from "next-themes";
+
 function Popular() {
+  const { setTheme, theme } = useTheme();
   return (
     <div className="hidden lg:flex  flex-col  w-10/12 text-gray-800">
       <div>

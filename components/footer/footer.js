@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { Font_ubuntu, Font_inter, Font_oreo } from "../my_font";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 function Footer() {
+  const { setTheme, theme } = useTheme();
   return (
     <div className="hidden lg:flex w-full flex-col items-center">
     <div className="w-10/12 flex flex-row h-[80px] justify-between items-center bg-white">

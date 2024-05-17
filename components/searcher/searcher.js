@@ -29,7 +29,7 @@ function Searcher() {
             <p className="text-white font-bold text-[14px] bg-red-600 pl-4 pr-4 pt-2 pb-2 rounded-full hover:bg-white hover:text-red-600 cursor-pointer duration-200 ease-in-out">
               All
             </p>
-            {Menus.map((item) => (
+            {Menus.filter(menu => menu.menu !== 'Furniture & Garden' && menu.menu !== 'Mobile & Tablets').map((item) => (
               <p key={item.id}
                 className={`${Font_inter.className} transition-all hover:bg-red-600 hover:rounded-full cursor-pointer pl-2 pr-2 pt-2 pb-2 rounded-full text-sm duration-200 ease-in-out`}
               >
