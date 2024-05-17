@@ -15,6 +15,7 @@ function Megamenu() {
   const [Hovered, setHovered] = useState("");
   const [Subs, setSubs] = useState([]);
   const [Itemlist, setItemlist] = useState([]);
+  const [Hovered_Name, setHovered_Name] = useState('')
 
   const filter_sub = (menu_name) => {
     setSubs(Menus.filter((menu) => menu.menu === menu_name)[0].sub);
@@ -42,18 +43,15 @@ function Megamenu() {
                   color: theme === 'dark' ? 'white' : 'black',
                 }}>{category.menu}</p>
                 {category.sub.map((item) => (
-                  <div style={{
-                    backgroundColor: theme === 'dark' ? 'white' : 'black',
-                  }} key={item.id}>
-                    <div className={styles.sub_menu_item}  style={{
-                    backgroundColor: theme === 'dark' ? 'white' : 'black',
-                  }}>
+                  <div  key={item.id}>
+                    <div className={styles.sub_menu_item}  >
                       <div key={item.id} className={styles.left}>
                         {Subs.map((item) => (
                           <p
                             key={item.id}
                             onMouseOver={() => {
                               filter_item_list(item.name);
+                              setHovered_Name(item.name);
                             }}
                           >
                             {item.name}
@@ -63,7 +61,7 @@ function Megamenu() {
 
                       <div key={item.id} className={styles.right}>
                         <div className={styles.title}>
-                          <p>{item.name}</p>
+                          <p>{Hovered_Name}</p>
                           <Link href={"#"} className={styles.link}>
                             <span>View All</span>
                             <GoArrowRight className={styles.icon} />

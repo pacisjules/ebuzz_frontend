@@ -32,7 +32,10 @@ export default function Home() {
                     <div
                       key={item.id}
                       onClick={()=>router.push(`/pages/Details?id=${item.id}`)}
-                      className="group duration-300 shrink-0  ease-in-out w-[250px] mr-4 rounded-md  border-[#374151] border-[1px] hover:bg-[#374151]  hover:scale-[1.05] hover:border-red-500 hover:shadow-2xl hover:cursor-pointer p-2"
+                      className={`group duration-300 shrink-0  ease-in-out w-[250px] mr-4 rounded-md  border-[#374151] border-[1px] 
+                      hover:${
+                        theme === "bg-[#374151]" ? "bg-white" : "gray-500"
+                      }  hover:scale-[1.05] hover:border-red-500 hover:shadow-2xl hover:cursor-pointer p-2`}
                     >
                       <Image
                         loading="lazy"

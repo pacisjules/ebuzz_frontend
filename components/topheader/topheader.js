@@ -187,6 +187,7 @@ function Topheader() {
               width={100}
               height={100}
               onClick={() => router.push("/")}
+              className="cursor-pointer"
             />
           </div>
           <div>
@@ -314,6 +315,7 @@ function Topheader() {
             width={120}
             height={100}
             onClick={() => router.push("/")}
+            className="cursor-pointer"
           />
           <Theme />
         </div>
