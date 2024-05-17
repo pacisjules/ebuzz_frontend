@@ -31,7 +31,7 @@ function Searcher() {
             </p>
             {Menus.filter(menu => menu.menu !== 'Furniture & Garden' && menu.menu !== 'Mobile & Tablets').map((item) => (
               <p key={item.id}
-                className={`${Font_inter.className} transition-all hover:bg-red-600 hover:rounded-full cursor-pointer pl-2 pr-2 pt-2 pb-2 rounded-full text-sm duration-200 ease-in-out`}
+                className={`${Font_inter.className} transition-all hover:bg-red-600 hover:rounded-full cursor-pointer pl-2 pr-2 pt-2 pb-2 rounded-full font-normal text-sm duration-200 ease-in-out`}
               >
                 {item.menu}
               </p>
