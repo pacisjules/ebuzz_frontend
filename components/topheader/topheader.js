@@ -28,7 +28,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 function Topheader() {
   const { setTheme, theme } = useTheme();
-  const router=useRouter();
+  const router = useRouter();
   const [all_countries, setAllCountries] = useState([
     {
       id: 1,
@@ -304,8 +304,8 @@ function Topheader() {
       <div
         className={`sm:hidden md:flex w-full  h-16 p-4 
           flex-col justify-between content-center  border-b ${
-          theme === "dark" ? "border-gray-700" : "border-gray-200"
-        } mx-auto lg:hidden `}
+            theme === "dark" ? "border-gray-700" : "border-gray-200"
+          } mx-auto lg:hidden `}
       >
         <div className="flex flex-row justify-center content-center gap-6">
           <Image
@@ -320,7 +320,9 @@ function Topheader() {
 
         <div
           className={`${
-            theme === "dark" ? "bg-black bg-opacity-70 backdrop-blur-lg" : "bg-white bg-opacity-70 backdrop-blur-lg"
+            theme === "dark"
+              ? "bg-black bg-opacity-70 backdrop-blur-lg"
+              : "bg-white bg-opacity-70 backdrop-blur-lg"
           } fixed bottom-0 left-0 right-0 flex flex-row justify-between content-center gap-4 pt-4 pb-4 pl-4 pr-4  border-t ${
             theme === "dark" ? "border-gray-700" : "border-gray-200"
           }`}
@@ -329,7 +331,8 @@ function Topheader() {
             <div
               key={id}
               className="flex items-center justify-between  gap-2 content-center flex-col cursor-pointer"
-            > <Link href={`/pages/Post?myid=${id}`} className="flex items-center justify-between  gap-2 content-center flex-col cursor-pointer">
+              onClick={() => router.push(`/pages/Post?myid=${id}`)}
+            >
               {icon}
               <span
                 className={`text-${
@@ -337,7 +340,7 @@ function Topheader() {
                 } text-xs font-medium`}
               >
                 {name}
-              </span></Link>
+              </span>
             </div>
           ))}
         </div>
