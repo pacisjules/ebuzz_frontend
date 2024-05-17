@@ -9,7 +9,8 @@ import Popular from "@/components/popularcategory/popular";
 export default function Home() {
   const { setTheme, theme } = useTheme();
   return (
-    <><Searcher />
+    <>
+    <Searcher />
     <Popular />
     <div className="w-full flex flex-col justify-center items-center">
       <div className="hidden lg:flex  flex-col  w-[83%]   mt-4 items-center">

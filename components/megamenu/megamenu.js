@@ -92,7 +92,7 @@ function Megamenu() {
             <input
               type="text"
               placeholder="Search for anything..."
-              className={`w-full text-sm outline-none group-focus:border-gray-800 group-focus:border-2 ${Font_inter.className}`}
+              className={`w-full text-sm outline-none ${theme === 'dark' ? 'bg-[#121212]' : 'bg-white'} ${Font_inter.className}`}
             />
             <GoSearch className={`text-[30px] text-gray-400 `} />
           </div>
