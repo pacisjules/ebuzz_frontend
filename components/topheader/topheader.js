@@ -25,8 +25,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
+import { useRouter } from "next/router";
 function Topheader() {
   const { setTheme, theme } = useTheme();
+  const router=useRouter();
   const [all_countries, setAllCountries] = useState([
     {
       id: 1,
@@ -184,6 +186,7 @@ function Topheader() {
               alt="logo"
               width={100}
               height={100}
+              onClick={() => router.push("/")}
             />
           </div>
           <div>
@@ -310,6 +313,7 @@ function Topheader() {
             alt="logo"
             width={120}
             height={100}
+            onClick={() => router.push("/")}
           />
           <Theme />
         </div>
